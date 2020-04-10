@@ -1,0 +1,88 @@
+html, body {
+    overflow: auto;
+    min-height: 100%;
+}
+
+body{
+    min-height: 100vh;
+}
+
+body#bg-img{
+    background: url('./img/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    position: top right;
+    margin:10em 2em 2em 2em;
+}
+
+body#bg-img::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    right:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    background: rgba(68,68,68,0.9);
+}
+
+.line {
+    width: 53px;
+    height: 0;
+    border: 2px solid #C4C4C4;
+    margin: 5px;
+    display:inline-block;
+}
+
+#animation{
+    height: 20px;
+}
+
+div.progressbar-text{
+
+    color: grey !important;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px !important;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 20px !important;
+    color:grey;
+}
+h1,h2{
+    font-family: 'Black Ops One', cursive;
+}
+
+h2{
+    color:white;
+    font-size: 100px !important;
+}
+
+.main{
+    margin:1em;
+    padding: 1em;
+    border: 2px solid grey;
+}
+
+.line2{
+    padding-top: 10px;
+}
+
+.icon{
+    margin: 3em 1em 1em 1em;
+    height: 50px;
+}
+
+@media screen and (max-width:600px){
+
+    .line{
+        width: 40px;
+    }
+
+    h2{
+        font-size: 30px !important;
+    }
+
+}
